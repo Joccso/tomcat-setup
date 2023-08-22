@@ -19,7 +19,7 @@ public class PersonMain {
 
     StringWriter writer = new StringWriter();
     marshaller.marshal(person, writer);
-    System.out.println(writer.toString());
+    System.out.println(writer);
 
     /* Unmarshall */
     Unmarshaller unmarshaller = context.createUnmarshaller();
