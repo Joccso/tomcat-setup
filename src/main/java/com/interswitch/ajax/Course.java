@@ -30,7 +30,7 @@ public class Course {
   public String toString() {
     return "Course {\n" +
             "\t\tcourseCode='" + courseCode + '\'' +
-            ",\n\t\tcourseName='" + courseName + '\'' + '\n' +
+            ",\n\t\tcourseName='" + courseName + '\'' + '\n' + '\t' +
             '}';
   }
 }

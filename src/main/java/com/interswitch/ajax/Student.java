@@ -3,8 +3,8 @@ package com.interswitch.ajax;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 
 @XmlRootElement
 public class Student {
@@ -55,7 +55,7 @@ public class Student {
             "\tfirstname='" + firstname + '\'' +
             ",\n\tlastname='" + lastname + '\'' +
             ",\n\tgender='" + gender + '\'' +
-            ",\n\tcourses= " + courses +
+            ",\n\tcourses= " + courses + '\n' +
             '}';
   }
 }
