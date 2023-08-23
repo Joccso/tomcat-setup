@@ -24,6 +24,15 @@ public class JSONTest {
     /* Creating JSONObject from JSON String */
     System.out.println("Creating JSONObject from JSON String");
     jo = new JSONObject("{\"name\":\"Jon Doe\",\"city\":\"Chicago\",\"age\":\"22\"}");
+    jo = new JSONObject("{name:Jon Doe,city:Chicago,age:22}");
+    System.out.println(jo);
+    /* Serialize Java Object to JSON */
+    System.out.println("Serialize Java Object to JSON");
+    Demo demo = new Demo();
+    demo.setId(1);
+    demo.setName("Tamara");
+    demo.setActive(true);
+    jo = new JSONObject(demo);
     System.out.println(jo);
   }
 }
