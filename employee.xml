@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<employee>
+  <name>Samuel Goodnews</name>
+  <phone-number>
+    <work>08056897213</work><home>09187634518</home>
+  </phone-number>
+  <address>
+    <city>Victoria Island</city>
+    <house-no>15 Adeola Odeku Road, VI</house-no>
+    <postal-code>232512-89</postal-code>
+    <state>Lagos</state>
+  </address>
+  <department>
+    <name>IT</name>
+    <manager>
+      <name>Chris Tom</name>
+      <phone-number>
+        <work> 07089765411</work>
+      </phone-number>
+    </manager>
+  </department>
+</employee>
