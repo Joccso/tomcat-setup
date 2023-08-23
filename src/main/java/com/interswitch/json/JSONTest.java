@@ -1,5 +1,6 @@
 package com.interswitch.json;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.HashMap;
@@ -34,5 +35,15 @@ public class JSONTest {
     demo.setActive(true);
     jo = new JSONObject(demo);
     System.out.println(jo);
+    /* Create JSONArray */
+    System.out.println("Create JSONArray");
+    JSONArray ja = new JSONArray();
+    ja.put(Boolean.TRUE);
+    ja.put("Let's go");
+    jo = new JSONObject();
+    jo.put("name", "Jon Doe");
+    jo.put("age", 22);
+    jo.put("city", "Chicago");
+    System.out.println(ja.put(jo));
   }
 }
