@@ -8,22 +8,22 @@ import jakarta.xml.bind.annotation.XmlAccessorType;
 @XmlRootElement(name = "phone-number")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class PhoneNumber {
-  private Long work;
-  private Long home;
+  private String work;
+  private String home;
 
-  public Long getWork() {
+  public String getWork() {
     return work;
   }
 
-  public void setWork(Long work) {
+  public void setWork(String work) {
     this.work = work;
   }
 
-  public Long getHome() {
+  public String getHome() {
     return home;
   }
 
-  public void setHome(Long home) {
+  public void setHome(String home) {
     this.home = home;
   }
 
