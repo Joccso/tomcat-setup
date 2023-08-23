@@ -3,10 +3,22 @@ package com.interswitch.ajax;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
+import java.util.List;
+import java.util.ArrayList;
+
 @XmlRootElement
 public class Person {
   private String name;
   private String address;
+  private List<Course> myCourse = new ArrayList<>();
+
+  public List<Course> getMyCourse() {
+    return myCourse;
+  }
+
+  public void setMyCourse(List<Course> myCourse) {
+    this.myCourse = myCourse;
+  }
 
   @XmlElement
   public String getName() {
@@ -31,6 +43,7 @@ public class Person {
     return "Person{" +
             "name='" + name + '\'' +
             ", address='" + address + '\'' +
+            ", myCourse=" + myCourse +
             '}';
   }
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<student-course>
+  <course>
+    <courseCode>MTH201</courseCode>
+    <courseName>Ordinary Differential Equations I</courseName>
+  </course>
+  <course>
+    <courseCode>MTH202</courseCode>
+    <courseName>Ordinary Differential Equations II</courseName>
+  </course>
+</student-course>
