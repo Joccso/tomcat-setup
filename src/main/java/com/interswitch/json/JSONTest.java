@@ -16,62 +16,16 @@ public class JSONTest {
     jo.put("city", "Chicago");
     System.out.println(jo);
     /* Mapping with Json */
-    System.out.println("Mapping with Json");
-    Map<String, String> map = new HashMap<>();
-    map.put("name", "Jon Doe");
-    map.put("age", "22");
-    map.put("city", "Chicago");
-    System.out.println(map);
-    jo = new JSONObject(map);
-    System.out.println(jo);
+    JSONMapping.jsonMapping();
     /* Creating JSONObject from JSON String */
-    System.out.println("Creating JSONObject from JSON String");
-    jo = new JSONObject("{\"name\":\"Jon Doe\",\"city\":\"Chicago\",\"age\":\"22\"}");
-    jo = new JSONObject("{name:Jon Doe,city:Chicago,age:22}");
-    System.out.println(jo);
+    ObjectFromString.createJsonObjectFromJsonString();
     /* Serialize Java Object to JSON */
-    System.out.println("Serialize Java Object to JSON");
-    Demo demo = new Demo();
-    demo.setId(1);
-    demo.setName("Tamara");
-    demo.setActive(true);
-    jo = new JSONObject(demo);
-    System.out.println(jo);
+    ObjectToJson.serializeJavaObjectToJson();
     /* Create JSONArray */
-    System.out.println("Create JSONArray");
-    JSONArray ja = new JSONArray();
-    ja.put(Boolean.TRUE);
-    ja.put("Let's go");
-    /* Object 1 */
-    jo = new JSONObject();
-    jo.put("name", "Jon Doe");
-    jo.put("age", 22);
-    jo.put("city", "Chicago");
-    ja.put(jo);
-    /* Object 2 */
-    jo = new JSONObject();
-    jo.put("name", "Samuel Egho");
-    jo.put("age", 23);
-    jo.put("city", "Edo");
-    ja.put(jo);
-    /* Object 3 */
-    jo = new JSONObject();
-    jo.put("name", "Egho Goodnews");
-    jo.put("age", 21);
-    jo.put("city", "Lagos");
-    System.out.println(ja.put(jo));
+    ArrayJson.createJsonArray();
     /* Create JSONArray from JSON String */
-    System.out.println("Create JSONArray from JSON String");
-    ja = new JSONArray("[true, \"Hello\", 215]");
-    System.out.println(ja);
+    ArrayFromString.createJsonArrayFromJsonString();
     /* Create JSONArray from a Collection or an Array */
-    System.out.println("Create JSONArray from a Collection or an Array");
-    List<String> list = new ArrayList<>();
-    list.add("California");
-    list.add("Bayelsa");
-    list.add("Delta");
-    list.add("Edo");
-    ja = new JSONArray(list);
-    System.out.println(ja);
+    ArrayFromCollection.createJsonArrayFromCollection();
   }
 }
