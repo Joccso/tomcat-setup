@@ -19,8 +19,11 @@ public class JSONTest {
     map.put("age", "22");
     map.put("city", "Chicago");
     System.out.println(map);
-    JSONObject jo1 = new JSONObject(map);
-    System.out.println(jo1);
-
+    jo = new JSONObject(map);
+    System.out.println(jo);
+    /* Creating JSONObject from JSON String */
+    System.out.println("Creating JSONObject from JSON String");
+    jo = new JSONObject("{\"name\":\"Jon Doe\",\"city\":\"Chicago\",\"age\":\"22\"}");
+    System.out.println(jo);
   }
 }
