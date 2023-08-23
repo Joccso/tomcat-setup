@@ -16,9 +16,9 @@ public class Assessment {
 
     /* Get Student */
     JAXBContext context1 = JAXBContext.newInstance(Student.class);
-    Unmarshaller unMarshallerOne = context1.createUnmarshaller();
-    File file1 = new File("student.xml");
-    Student student = (Student) unMarshallerOne.unmarshal(file1);
+    unmarshaller = context1.createUnmarshaller();
+    file = new File("student.xml");
+    Student student = (Student) unmarshaller.unmarshal(file);
     /* Add Student Courses */
     student.getCourses().add(course);
     /* Print Student */
