@@ -3,7 +3,9 @@ package com.interswitch.json;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class JSONTest {
@@ -61,6 +63,15 @@ public class JSONTest {
     /* Create JSONArray from JSON String */
     System.out.println("Create JSONArray from JSON String");
     ja = new JSONArray("[true, \"Hello\", 215]");
+    System.out.println(ja);
+    /* Create JSONArray from a Collection or an Array */
+    System.out.println("Create JSONArray from a Collection or an Array");
+    List<String> list = new ArrayList<>();
+    list.add("California");
+    list.add("Bayelsa");
+    list.add("Delta");
+    list.add("Edo");
+    ja = new JSONArray(list);
     System.out.println(ja);
   }
 }
