@@ -5,12 +5,10 @@ import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 
-@XmlRootElement(name = "address")
+@XmlRootElement(name = "department")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Department {
-//  @XmlElement(name = "name")
   private String name;
-//  @XmlElement(name = "manager")
   private Manager manager;
 
 //  @XmlElement(name = "manager")

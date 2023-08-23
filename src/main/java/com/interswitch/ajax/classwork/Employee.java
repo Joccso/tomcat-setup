@@ -8,13 +8,10 @@ import jakarta.xml.bind.annotation.XmlAccessorType;
 @XmlRootElement(name = "employee")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Employee {
-//  @XmlElement(name = "name")
   private String name;
   @XmlElement(name = "phone-number")
   private PhoneNumber phoneNumber;
-//  @XmlElement(name = "address")
   private Address address;
-//  @XmlElement(name = "department")
   private Department department;
 
   public String getName() {

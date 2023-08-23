@@ -8,13 +8,11 @@ import jakarta.xml.bind.annotation.XmlAccessorType;
 @XmlRootElement(name = "address")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Address {
-//  @XmlElement(name = "city")
   private String city;
   @XmlElement(name = "house-no")
   private String houseNumber;
   @XmlElement(name = "postal-code")
   private String postalCode;
-//  @XmlElement(name = "state")
   private String state;
 
   public String getCity() {

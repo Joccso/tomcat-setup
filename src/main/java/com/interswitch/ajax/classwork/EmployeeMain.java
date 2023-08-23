@@ -8,7 +8,7 @@ import java.io.File;
 
 public class EmployeeMain {
   public static void main(String[] args) throws JAXBException {
-    JAXBContext context = JAXBContext.newInstance(Employee.class);
+    JAXBContext context = JAXBContext.newInstance(EmployeeMapHelper.xmlMappingObjects);
     Unmarshaller unmarshaller = context.createUnmarshaller();
     File file = new File("employee.xml");
     Employee employee = (Employee) unmarshaller.unmarshal(file);
